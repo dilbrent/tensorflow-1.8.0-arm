@@ -165,7 +165,7 @@ static std::vector<string>* CreatePrimordialRpaths() {
 #if defined(__APPLE__)
   rpaths->push_back("driver/driver_sh.runfiles/local_config_cuda/cuda/lib");
 #else
-  rpaths->push_back("driver/driver_sh.runfiles/local_config_cuda/cuda/lib64");
+  rpaths->push_back("driver/driver_sh.runfiles/local_config_cuda/cuda/lib");
 #endif
   return rpaths;
 }
@@ -220,7 +220,7 @@ static std::vector<string>* CreatePrimordialRpaths() {
 #if defined(__APPLE__)
   return "external/local_config_cuda/cuda/lib";
 #else
-  return "external/local_config_cuda/cuda/lib64";
+  return "external/local_config_cuda/cuda/lib";
 #endif
 }
 
@@ -230,7 +230,7 @@ static std::vector<string>* CreatePrimordialRpaths() {
 #elif defined(PLATFORM_WINDOWS)
   return "";
 #else
-  return "external/local_config_cuda/cuda/driver/lib64";
+  return "external/local_config_cuda/cuda/driver/lib";
 #endif
 }
 
@@ -238,7 +238,7 @@ static std::vector<string>* CreatePrimordialRpaths() {
 #if defined(__APPLE__)
   return "external/local_config_cuda/cuda/extras/CUPTI/lib";
 #else
-  return "external/local_config_cuda/cuda/extras/CUPTI/lib64";
+  return "external/local_config_cuda/cuda/extras/CUPTI/lib";
 #endif
 }
 

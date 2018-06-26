@@ -57,7 +57,7 @@ must be installed on your system:
     and add its path to your `LD_LIBRARY_PATH` environment variable:
 
     <pre>
-    $ <b>export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib64</b>
+    $ <b>export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib</b>
     </pre>
 
     For CUDA Toolkit <= 7.5 do:

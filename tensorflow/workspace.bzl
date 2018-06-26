@@ -107,13 +107,12 @@ def tf_workspace(path_prefix="", tf_repo_name=""):
   tf_http_archive(
       name = "eigen_archive",
       urls = [
-          "https://mirror.bazel.build/bitbucket.org/eigen/eigen/get/6913f0cf7d06.tar.gz",
-          "https://bitbucket.org/eigen/eigen/get/6913f0cf7d06.tar.gz",
+          "http://mirror.bazel.build/bitbucket.org/eigen/eigen/get/d781c1de9834.tar.gz",
+          "https://bitbucket.org/eigen/eigen/get/d781c1de9834.tar.gz",
       ],
-      sha256 = "791b836cacd03e20bae5bdd25f1c4a5505a0a9975ba94a61eb4e2631fbd1d53a",
-      strip_prefix = "eigen-eigen-6913f0cf7d06",
-      build_file = clean_dep("//third_party:eigen.BUILD"),
-      patch_file = clean_dep("//third_party:eigen_fix_cuda_compilation.patch")
+      sha256 = "a34b208da6ec18fa8da963369e166e4a368612c14d956dd2f9d7072904675d9b",
+      strip_prefix = "eigen-eigen-d781c1de9834",
+      build_file = str(Label("//third_party:eigen.BUILD"))
   )
 
   tf_http_archive(
