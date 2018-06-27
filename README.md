@@ -5,7 +5,7 @@
 -----------------
 
 ### My build tree for TensorFlow 1.8.0 on armv7l.  
-#### A number of tedious changes need to be made to the dist copy of TF 1.8.0 to get it to build on any arm platform.  
+#### A number of tedious changes need to be made to the distribution/release tree of TensorFlow 1.8.0 to build it on various 32 bit arm platforms.
 #### I am preserving the changes and the binaries here:
 
 [https://github.com/dilbrent/tensorflow-1.8.0-arm/releases](https://github.com/dilbrent/tensorflow-1.8.0-arm/releases)
